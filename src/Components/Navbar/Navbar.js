@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MenuItems from './MenuItems'
+import {MenuItems} from './MenuItems'
 
 class Navbar extends Component {
     render() {
@@ -10,7 +10,17 @@ class Navbar extends Component {
 
                 </div>
                 <ul>
-                  <li><a href='#'></a></li>
+                  {MenuItems.map((item, index)=> {
+                    return(
+                        <li key = {index}>
+                          <a className={item.cName} href={item.url} >
+                            {item.title}
+                          </a>
+                        </li>
+
+                    )
+                  })}
+                  
                   <li><a href='#'></a></li>
                   <li><a href='#'></a></li>
                   <li><a href='#'></a></li>
