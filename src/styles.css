@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  .nav {
+    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgbga(73, 63, 252, 1 ) 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  nav a{
+    color: inherit
+  }
