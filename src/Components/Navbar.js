@@ -1,20 +1,22 @@
-import {useRef} from "react";
-import {FaBars, FaTimes} from 'react-icons/fa';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "../styles/styles.css";
 
 function Navbar() {
   const navRef = useRef();
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav")
-  }
+    navRef.current.classList.toggle("responsive_nav");
+  };
   return (
     <header>
-  
+      <h1>Lost and Found Center</h1>
+
       <nav className="nav" ref={navRef}>
-        <a href="/" className="title">
-          Lost and Found Center
-        </a>
         <ul>
+          <li>
+            <a href="/home">Home</a>
+          </li>
           <li>
             <a href="/about">About</a>
           </li>
@@ -28,16 +30,13 @@ function Navbar() {
             <a href="/signup">Signup</a>
           </li>
         </ul>
-        <button className="nav-close-btn" onClick = {showNavbar}>
-        <FaTimes/>
-        
+        <button className="nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
         </button>
       </nav>
-      <button className="nav-btn" onClick = {showNavbar}>
-      <FaBars/>
-        
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
       </button>
-      
     </header>
   );
 }
