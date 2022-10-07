@@ -7,6 +7,7 @@ import Login from './Components/Login'
 import SignUp from './Components/Signup'
 import ContactForm from './Components/ContactForm'
 import Home from './Components/Home'
+import Reviews from './Components/Reviews'
 function App() {
   return (
     <Router>
@@ -49,8 +50,10 @@ function App() {
           </div>
         </div>
       </div>
-      <ContactForm />
+      <Reviews/>
+   
     </Router>
+    
   )
 }
 export default App
