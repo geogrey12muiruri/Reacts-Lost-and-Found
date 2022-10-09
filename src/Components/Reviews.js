@@ -21,7 +21,7 @@ function Reviews() {
     setHoverValue(undefined)
   };
   return (
-    <div style={styles.container}>
+    <div className="container mt-5">
       <h2>User Reviews</h2>
       <div style={styles.stars}>
         {stars.map((_, index) => {

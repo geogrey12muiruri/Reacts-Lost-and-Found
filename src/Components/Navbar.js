@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "../styles/styles.css";
 
 function Navbar() {
@@ -14,21 +15,22 @@ function Navbar() {
 
       <nav className="nav" ref={navRef}>
         <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact Us</a>
-          </li>
-          <li>
-            <a href="/login">Login</a>
-          </li>
-          <li>
-            <a href="/signup">Signup</a>
-          </li>
+          <Link to={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link to="about">
+            <li>About</li>
+          </Link>
+          <Link to={"/Contact-Form"}>
+            <li>Contact Us</li>
+          </Link>
+
+          <Link to={"/log-in"}>
+            <li>Login</li>
+          </Link>
+          <Link to={"/Sign-up"}>
+            <li>Signup</li>
+          </Link>
         </ul>
         <button className="nav-close-btn" onClick={showNavbar}>
           <FaTimes />

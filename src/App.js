@@ -7,52 +7,43 @@ import Login from './Components/Login'
 import SignUp from './Components/Signup'
 import ContactForm from './Components/ContactForm'
 import Home from './Components/Home'
+import UploadImages from './Components/UploadImages'
 import Reviews from './Components/Reviews'
+import Uploads from './Components/Uploads'
+import Navbar from './Components/Navbar'
+import About from './Components/About'
+
+
 function App() {
   return (
-    <Router>
+    
       <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-          <div className="container">
-            <Link className="navbar-brand" to={'/homepage'}>
-              Lost and Found Center
-            </Link>
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/log-in'}>
-                    Login
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/sign-up'}>
-                    Sign up
-                  </Link>
-                </li>
-                <li className="nav-item">
-                <Link className="nav-link" to={'/contact-Form'}>
-                  ContactForm
-                </Link>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+       <Router>
+        <Navbar/>
+        
         <div className="auth-wrapper">
           <div className="auth-inner">
             <Routes>
-              <Route exact path="/" element={<Login />} />
+              <Route exact path="/" element={<Home />} />
               <Route path="/log-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/contact-Form" element={<ContactForm />} />
-              <Route path="/homepage" element={<Home />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="/uploads" element={<UploadImages />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/uploadimages" element={<UploadImages />} />
+              
             </Routes>
+            
           </div>
         </div>
-      </div>
-      <Reviews/>
-   
-    </Router>
+          
+        </Router>
+       
+      
+     
+     
+    /</div>
     
   )
 }
