@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Reacts-Lost-and-Found/static/css/main.bea21a77.css",
+    "main.js": "/Reacts-Lost-and-Found/static/js/main.ce8c4147.js",
+    "index.html": "/Reacts-Lost-and-Found/index.html",
+    "main.bea21a77.css.map": "/Reacts-Lost-and-Found/static/css/main.bea21a77.css.map",
+    "main.ce8c4147.js.map": "/Reacts-Lost-and-Found/static/js/main.ce8c4147.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bea21a77.css",
+    "static/js/main.ce8c4147.js"
+  ]
+}
